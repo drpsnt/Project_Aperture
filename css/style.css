@@ -200,4 +200,5 @@ header nav li:last-of-type a{
 .example{
     display: block;
     box-sizing: border-box;
+    margin: 0;
 }
