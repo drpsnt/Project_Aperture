@@ -197,4 +197,6 @@ header nav li:last-of-type a{
 .link_help:hover{
     transform: scale(1.1);
 }
-.example{}
+.example{
+    display: block;
+}
