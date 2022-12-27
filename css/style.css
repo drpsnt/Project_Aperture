@@ -95,8 +95,83 @@ header nav li:last-of-type a{
     text-align: center;
     color: #C0C0C0;
 }
+/* What we do*/
+.what_we_do{
+    padding-top: 112px;
+    padding-bottom: 100px;
+    background-color: #000000;
+}
+.what_we_do .container{
+    max-width: 1168px;
+}
+.what_we_do h2{
+    margin-bottom: 15px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.what_we_do h3{
+    margin-bottom: 42px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+}
+.d_flex_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.what_we_do .d_flex_container article{
+    max-width: 576px;
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.what_we_do .d_flex_container article img{
+    display: block;
+    width: 100%;
+}
+.what_we_do .d_flex_container article .description{
+    position: absolute;
+    bottom: 0;
+    padding: 30px 45px 3px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.what_we_do .d_flex_container article .description h4{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.what_we_do .d_flex_container article .description p{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    margin-bottom: 20px;
+}
+.what_we_do .d_flex_container article .description .link_help{
+    margin-bottom: 30px;
+}
 
-/*Main_Clients*/
+    /*Main_Clients*/
 
 .main_clients{
     background-color: black;
@@ -202,3 +277,4 @@ header nav li:last-of-type a{
     box-sizing: border-box;
     margin: 0;
 }
+
