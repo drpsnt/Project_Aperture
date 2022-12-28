@@ -170,6 +170,13 @@ header nav li:last-of-type a{
 .what_we_do .d_flex_container article .description .link_help{
     margin-bottom: 30px;
 }
+    /* Main Landscape*/
+
+.main_landscape{
+    background-image: url("../images/landscape.jpg");
+    background-size: cover;
+    height: 100vh;
+}
 
     /*Main_Clients*/
 
