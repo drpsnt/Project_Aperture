@@ -14,6 +14,11 @@ header{
     max-width: 1200px;
     margin: auto;
 }
+header nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
 header nav ul{
     list-style: none;
     display: flex;
@@ -57,7 +62,7 @@ header nav li:last-of-type a{
 .main_banner{
     background-image: url("../images/main_image.jpg");
     background-size: cover;
-    height: 90vh;
+    height: 710px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -105,9 +110,7 @@ header nav li:last-of-type a{
     padding-bottom: 100px;
     background-color: #000000;
 }
-.what_we_do .container{
-    max-width: 1168px;
-}
+
 .what_we_do h2{
     margin-bottom: 15px;
     font-family: 'Poppins',sans-serif;
@@ -233,8 +236,6 @@ header nav li:last-of-type a{
 
 .main_clients{
     background-color: black;
-}
-.main_clients .container{
     padding-top: 113px;
     padding-bottom: 140px;
 }
@@ -278,7 +279,7 @@ header nav li:last-of-type a{
     padding-bottom: 108px;
 }
 .main_help .container{
-    max-width: 571px;
+    max-width: 1200px;
     text-align: center;
 }
 .main_help h2{
@@ -367,6 +368,9 @@ header nav li:last-of-type a{
     background-image: url("../images/icon4.svg");
     width: 10px;
 }
+
+/*         We use          */
+
 .we_use{
     background-color: black;
     position: relative;
@@ -511,18 +515,19 @@ footer .foot_nav_link li a{
 }
 .subscribe_form{
     width: 458px;
+    box-sizing: border-box;
     height: 52px;
     background-color: white;
     border-radius: 12px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+
 }
 .form_email{
-    margin: auto;
+    margin:auto 5px;
     box-sizing: border-box;
     outline: none;
-    max-width: 360px;
     border: none;
     width: 100%;
     font-family: 'Poppins',sans-serif;
@@ -532,7 +537,7 @@ footer .foot_nav_link li a{
     line-height: 20px;
 }
 .form_submit{
-    margin: auto;
+    margin: auto 10px;
     background-color: #000000;
     border-radius: 11px;
     width: 63px;
@@ -569,4 +574,117 @@ footer .foot_copyright p{
 }
 .foot_copyright .foot_social li:hover{
     transform: scale(1.1);
+}
+
+@media only screen and (max-width : 1200px) {
+    .container{
+        padding: 0 15px;
+    }
+    .d_flex_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .we_use .information{
+        max-width: 400px;
+    }
+    .we_use .information p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width : 850px) {
+
+    /*    header nav?      */
+    header nav{
+        display: none;
+    }
+
+    .we_use .information{
+        max-width: 340px;
+    }
+}
+@media only screen and (max-width : 700px) {
+    .main_clients{
+        padding-bottom: 70px;
+    }
+    .clients_icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .clients_icons a{
+        margin-bottom: 40px;
+    }
+    .foot_subscribe, .foot_copyright {
+        display: block;
+    }
+    .foot_copyright .foot_social{
+        justify-content: center;
+    }
+    .subscribe_text,.foot_copyright p{
+        margin-bottom: 20px;
+    }
+    .foot_copyright .foot_social li{
+        margin:0 25px;
+    }
+    .subscribe_form{
+        max-width: 458px;
+        width: 100%;
+    }
+    .foot_nav_link{
+        margin: 0;
+    }
+    .link_help{
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .text_landscape{
+        max-width: 350px;
+        padding: 0 15px;
+        margin: auto;
+    }
+    .we_use .information{
+        max-width: 150px;
+    }
+    .we_use .information p{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width : 400px){
+    .we_use .information{
+        max-width: 130px;
+    }
+    .position_items{
+        display: block;
+    }
+    .position_items li{
+        margin-bottom: 10px;
+    }
+    .main_banner .container{
+        margin-bottom: 100px;
+    }
+    .what_we_do{
+        padding-top: 80px;
+    }
+    .main_banner h4, .main_banner p{
+         font-size: 14px;
+     }
+    .main_banner h1{
+        font-size: 50px;
+    }
+    .foot_nav{
+        display: block;
+    }
+    .foot_inform{
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width : 360px){
+    .what_we_do .d_flex_container article .description h4{
+        font-size: 12px;
+    }
+    .what_we_do .d_flex_container article .description p{
+        font-size: 10px;
+    }
 }
