@@ -672,8 +672,7 @@ footer .foot_copyright p{
         width: 100%;
         height: 100%;
         background-color: #4D4D4D;
-        align-items:flex-start;
-        padding: 100px 0 20px 0 ;
+        padding: 120px 0 0 0 ;
         transition: all 0.2s ease-in 0s;
     }
     .header_menu.burger_active{
@@ -688,6 +687,7 @@ footer .foot_copyright p{
     }
     .header_list li{
         margin-top: 40px;
+        margin-left: 0;
     }
     .header_list li a{
         font-size: 20px;
