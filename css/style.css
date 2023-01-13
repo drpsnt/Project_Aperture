@@ -6,6 +6,11 @@
 .d_none{
     display: none;
 }
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
 header{
     padding: 24px 0;
     position: fixed;
@@ -13,6 +18,7 @@ header{
     left: 0;
     width: 100%;
     z-index: 50;
+    box-sizing: border-box;
 }
 header:before{
     content: "";
@@ -31,11 +37,6 @@ header:before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 15px;
 }
 .header_logo{
     max-width: 128px;
