@@ -38,7 +38,6 @@ header:before{
 }
 .header_logo{
     max-width: 128px;
-    overflow: hidden;
     position: relative;
     z-index: 3;
 }
@@ -294,10 +293,15 @@ main{
     align-items: center;
     justify-content: space-around;
 }
-.main_clients .clients_icons a{
-  transition: 0.4s;
+.clients_logo{
+   max-width: 128px;
+    transition: 0.4s;
 }
-.main_clients .clients_icons a:hover {
+.clients_logo img{
+    max-width: 100%;
+    display: block;
+}
+.clients_logo:hover {
     transform: scale(1.2);
 }
 
@@ -457,16 +461,20 @@ footer{
     padding: 100px 0 104px;
     background-color: black;
 }
-footer .container{
-    max-width: 1168px;
-}
+
 .foot_nav{
     display: flex;
     justify-content: space-between;
     padding-bottom: 36px;
 }
-footer .foot_nav .foot_inform a img{
+.footer_logo{
+    display: block;
+    max-width: 128px;
     margin-bottom: 20px;
+}
+.footer_logo img{
+    max-width: 100%;
+    display: block;
 }
 footer .foot_nav .foot_inform p{
     font-family: 'Poppins',sans-serif;
@@ -628,6 +636,7 @@ footer .foot_copyright p{
         width: 35px;
         height: 20px;
         z-index: 3;
+        cursor: pointer;
     }
     .header_burger:before,
     .header_burger:after{
