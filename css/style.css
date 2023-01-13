@@ -9,30 +9,42 @@
 header{
     background-color: black;
     padding: 24px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
 }
 .container{
     max-width: 1200px;
     margin: auto;
 }
-header nav {
+.header_logo{
+    max-width: 128px;
+    overflow: hidden;
+}
+.header_logo img{
+    max-width: 100%;
+    display: block;
+}
+.header_menu {
     list-style: none;
     display: flex;
     align-items: center;
 }
-header nav ul{
+.header_list {
     list-style: none;
     display: flex;
     align-items: center;
 }
-header nav li{
+.header_list li{
     margin-left: 32px;
     transition: 0.4s;
 }
 header nav li:hover{
     transform: scale(1.2);
-
 }
-header .container{
+header .header_body{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +71,10 @@ header nav li:last-of-type a{
     color: #000000;
 }
 
+/*    Main Banner      */
+main{
+    padding: 75px 0 0 0;
+}
 .main_banner{
     background-image: url("../images/main_image.jpg");
     background-size: cover;
@@ -595,7 +611,7 @@ footer .foot_copyright p{
 @media only screen and (max-width : 850px) {
 
     /*    header nav?      */
-    header nav{
+    .header_menu{
         display: none;
     }
 
