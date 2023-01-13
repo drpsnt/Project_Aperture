@@ -7,7 +7,6 @@
     display: none;
 }
 header{
-    background-color: black;
     padding: 24px 0;
     position: fixed;
     top: 0;
@@ -15,47 +14,59 @@ header{
     width: 100%;
     z-index: 50;
 }
+header:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+
+}
+.header_body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .container{
     max-width: 1200px;
     margin: auto;
+    padding: 0 15px;
 }
 .header_logo{
     max-width: 128px;
     overflow: hidden;
+    position: relative;
+    z-index: 3;
 }
 .header_logo img{
     max-width: 100%;
     display: block;
 }
-.header_menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
 .header_list {
     list-style: none;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 .header_list li{
     margin-left: 32px;
     transition: 0.4s;
 }
-header nav li:hover{
+.header_list li:hover{
     transform: scale(1.2);
 }
-header .header_body{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav li:first-of-type{
+.header_list li:first-of-type{
   margin-right: 24px;
 }
-header nav li:first-of-type a{
+.header_list li:first-of-type a{
     font-size: 13px;
 }
-header nav a{
+.header_list a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -64,11 +75,14 @@ header nav a{
     line-height: 20px;
     color: #FFFFFF;
 }
-header nav li:last-of-type a{
+.header_list li:last-of-type a{
     padding: 9px 20px 13px 20px;
     background-color: white;
     border-radius: 14px;
     color: #000000;
+}
+.header_burger{
+    display: none;
 }
 
 /*    Main Banner      */
@@ -593,9 +607,6 @@ footer .foot_copyright p{
 }
 
 @media only screen and (max-width : 1200px) {
-    .container{
-        padding: 0 15px;
-    }
     .d_flex_container{
         display: flex;
         justify-content: center;
@@ -610,11 +621,102 @@ footer .foot_copyright p{
 }
 @media only screen and (max-width : 850px) {
 
-    /*    header nav?      */
+    /*    Burger Menu     */
+    .header_burger{
+        display: block;
+        position: relative;
+        width: 35px;
+        height: 20px;
+        z-index: 3;
+    }
+    .header_burger:before,
+    .header_burger:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        height: 2px;
+        left: 0;
+        transition: all 0.2s ease-in 0s;
+    }
+    .header_burger span{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        left: 0;
+        top: 9px;
+        transition: all 0.2s ease-in 0s;
+    }
+    .header_burger:before{
+        top: 0;
+    }
+    .header_burger:after{
+        bottom: 0;
+    }
     .header_menu{
-        display: none;
+        position: fixed;
+        overflow: auto;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4D4D4D;
+        align-items:flex-start;
+        padding: 100px 0 20px 0 ;
+        transition: all 0.2s ease-in 0s;
+    }
+    .header_menu.burger_active{
+        top: 0;
+    }
+    .header_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+    }
+    .header_list li{
+        margin-top: 40px;
+    }
+    .header_list li a{
+        font-size: 20px;
+    }
+    .header_menu li:first-of-type{
+        margin-right: 0;
+    }
+    .header_menu li:first-of-type a{
+        font-size: 20px;
     }
 
+    .header_menu li:last-of-type a{
+    padding: 12px 23px 16px;
+    background-color: white;
+    border-radius: 14px;
+    color: #000000;
+    font-size: 20px;
+    }
+    .header_burger.burger_active:before{
+        transform: rotate(135deg);
+        top: 9px;
+    }
+    .header_burger.burger_active:after{
+        transform: rotate(-135deg);
+        bottom: 9px;
+    }
+    .header_burger.burger_active span{
+        display: none;
+    }
+    body.no-scroll{
+        overflow: hidden;
+    }
+
+
+
+
+
+
+    /*                    */
     .we_use .information{
         max-width: 340px;
     }
