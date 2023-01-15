@@ -32,7 +32,6 @@ header:before{
     height: 100%;
     background-color: black;
     z-index: 2;
-
 }
 .header_body{
     position: relative;
@@ -293,21 +292,74 @@ main{
     margin-bottom: 82px;
 }
 .clients_icons{
+    max-width: 1120px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .clients_logo{
-   max-width: 128px;
+    display: inline-block;
+    max-width: 128px;
     transition: 0.4s;
 }
 .clients_logo img{
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
-.clients_logo:hover {
-    transform: scale(1.2);
+.clients_icons .owl-stage{
+    display: flex;
+    align-items: center;
 }
+.clients_icons .owl-stage .owl-item{
+    display: flex;
+    justify-content: center;
+}
+.clients_logo:hover {
+    transform: scale(1.1);
+}
+
+.clients_icons .owl-nav .owl-prev{
+    position: absolute;
+    top: 23px;
+    left: 6px;
+}
+.clients_icons .owl-nav .owl-prev:after{
+    content: "\f053";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    color: white;
+    display: inline-block;
+    padding: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+.clients_icons .owl-nav .owl-prev:hover:after,
+.clients_icons .owl-nav .owl-next:hover:after{
+    background-color: #4D4D4D;
+}
+.clients_icons .owl-nav .owl-next{
+    position: absolute;
+    top:23px;
+    right: 6px;
+}
+.clients_icons .owl-nav .owl-next:after{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    color: white;
+    display: inline-block;
+    padding: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+
 
 /* Main_Help*/
 
