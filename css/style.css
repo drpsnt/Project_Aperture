@@ -707,6 +707,7 @@ footer .foot_copyright p{
     width: 100%;
     margin-bottom: 20px;
     border: none;
+
 }
 .button_feed{
     font-family: 'Poppins',sans-serif;
@@ -747,7 +748,9 @@ footer .foot_copyright p{
 .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl{
     border-radius: 10px;
 }
-
+.ui-dialog .ui-dialog-content{
+    padding: 0.5em 15px;
+}
 
 
 
