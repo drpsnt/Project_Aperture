@@ -748,33 +748,7 @@ footer .foot_copyright p{
 .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl{
     border-radius: 10px;
 }
-.ui-dialog .ui-dialog-content{
-    padding: 0.5em 15px;
-}
-.ui-button .ui-icon {
-    background-image: none;
-}
-.ui-dialog .ui-dialog-titlebar-close {
-    position: absolute;
-    right: 0.3em;
-    top: 50%;
-    border-radius: 50%;
-    border: 1px solid whitesmoke;
-    background-color: slategray;
-    width: 20px;
-    margin: -10px 0 0 0;
-    padding: 1px;
-    height: 20px;
-    transition: ease-in-out 0.3s;
-}
-.ui-dialog .ui-dialog-titlebar-close:hover{
-    background-color: whitesmoke;
-    background-image: none;
-}
-.ui-icon-closethick{
-    background-image: none;
-    background-position-x: 55px;
-}
+
 
 
 /*      Media responsive       */
