@@ -670,6 +670,87 @@ footer .foot_copyright p{
     transform: scale(1.1);
 }
 
+/*    Widget dialog        */
+
+.ui-dialog{
+    padding: 0;
+    width: 100%!important;
+    max-width: 400px!important;
+    z-index: 10;
+}
+
+.ui-dialog .ui-dialog-title{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.ui-widget-header{
+    border: none;
+}
+.ui-widget p{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.input_feedback{
+    padding: 8px 12px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+}
+.button_feed{
+    font-family: 'Poppins',sans-serif;
+    display: block;
+    padding: 7px 23px 10px;
+    background-color: #000000;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+.button_feed:hover{
+    cursor: pointer;
+    color: silver;
+}
+.ui-dialog .ui-dialog-titlebar{
+    background-color: black;
+}
+.ui-widget.ui-widget-content{
+    border: none;
+    background-color: #4D4D4D;
+}
+.form_feedback input:focus::placeholder{
+    color: transparent;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br,
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl,
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr,
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl{
+    border-radius: 10px;
+}
+
+
+
+/*      Media responsive       */
+
+
+
 @media only screen and (max-width : 1200px) {
     .d_flex_container{
         display: flex;
@@ -684,6 +765,17 @@ footer .foot_copyright p{
     }
 }
 @media only screen and (max-width : 850px) {
+
+    .ui-dialog .ui-dialog-titlebar{
+        background-color: black;
+    }
+    .ui-widget.ui-widget-content{
+        border: none;
+        background-color: whitesmoke;
+    }
+    .ui-widget p{
+        color:black;
+    }
 
     /*    Burger Menu     */
     .header_burger{

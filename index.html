@@ -9,9 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http://resources/demos/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="dialog" title="Get template">
+    <p>Enter your email for feedback</p>
+    <form>
+        <div class="form_feedback">
+            <label class="d_none" for="email_feedback"></label>
+            <input class="input_feedback" type="email" name="email" placeholder="Email" id="email_feedback">
+        </div>
+        <button class="button_feed" type="submit">
+            Submit
+        </button>
+    </form>
+</div>
 <header>
     <div class="container">
         <div class="header_body">
@@ -40,7 +54,7 @@
                 </li>
 
                 <li>
-                    <a href="#">Get template</a>
+                    <a href="#" id="opener">Get template</a>
                 </li>
             </ul>
         </nav>
@@ -295,6 +309,8 @@
 <script src="https://kit.fontawesome.com/a2651c069f.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <script src="js/owl.carousel.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
