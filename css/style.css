@@ -737,6 +737,9 @@ footer .foot_copyright p{
 .form_feedback input:focus::placeholder{
     color: transparent;
 }
+.form_feedback input:focus{
+    outline: none;
+}
 
 .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br,
 .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl,
