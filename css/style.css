@@ -929,7 +929,6 @@ footer .foot_copyright p{
         position: relative;
         text-decoration: none;
         color: rgba(255,255,255,0.6);
-        overflow: hidden;
         cursor: pointer;
         padding-left: 5px;
         padding-right: 5px;
@@ -989,7 +988,9 @@ footer .foot_copyright p{
     header nav ul li{
         margin-left: 0;
     }
-
+    .ui-dialog{
+        z-index: 300;
+    }
 
 
 
