@@ -975,6 +975,9 @@ footer .foot_copyright p{
     header nav ul a{
         font-size: 27px;
     }
+    header nav ul li:last-of-type {
+        margin-top: 10px;
+    }
     .nav__list-item:last-of-type a{
         color:black;
         text-decoration: none;
@@ -983,6 +986,11 @@ footer .foot_copyright p{
         font-size: 25px;
         line-height: 20px;
     }
+    header nav ul li{
+        margin-left: 0;
+    }
+
+
 
 
 }
